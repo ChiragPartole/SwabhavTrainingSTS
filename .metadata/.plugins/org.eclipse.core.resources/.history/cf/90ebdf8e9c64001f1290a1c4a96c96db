@@ -1,0 +1,55 @@
+package com.techlabs.bankapp.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.techlabs.bankapp.dto.PageResponse;
+import com.techlabs.bankapp.dto.TransactionDto;
+import com.techlabs.bankapp.entity.Transaction;
+import com.techlabs.bankapp.service.TransactionService;
+
+import jakarta.servlet.http.HttpSession;
+
+@RestController
+@RequestMapping("/bankingapp")
+public class TransactionController {
+
+    @Autowired
+    private TransactionService transactionService;
+
+    @GetMapping("/transactions")
+    public ResponseEntity<PageResponse<Transaction>> viewAllTransactions(
+            @RequestParam Integer pageNo, @RequestParam Integer pageSize) {
+        int pageNoValue = (pageNo != null) ? pageNo : 0;
+        int pageSizeValue = (pageSize != null) ? pageSize : Integer.MAX_VALUE;
+
+        return ResponseEntity.ok(transactionService.viewAllTransactions(pageNoValue, pageSizeValue));
+    }
+
+    @PostMapping("/transactions")
+    public ResponseEntity<TransactionDto> addTransaction(@RequestBody TransactionDto transactionDto
+    		,HttpSession session) {
+        return ResponseEntity.ok(transactionService.addTransaction(transactionDto,session));
+    }
+
+    @PutMapping("/transactions")
+    public ResponseEntity<Transaction> updateTransaction(@RequestBody TransactionDto transactionDto) {
+        // Assuming updateTransaction method exists in the service
+        // The method signature may differ based on how you identify and update transactions
+        return ResponseEntity.ok(transactionService.updateTransaction(transactionDto));
+    }
+
+    @DeleteMapping("/transactions")
+    public ResponseEntity<String> deleteTransaction(@RequestParam int transactionId) {
+        transactionService.deleteTransaction(transactionId);
+        return ResponseEntity.ok("Transaction deleted successfully!");
+    }
+}

@@ -1,0 +1,71 @@
+2024-08-29T10:04:06.438+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.techlabs.bankapp.Application         : Starting Application using Java 21.0.3 with PID 10036 (D:\springAssignments\13-miniproject-bankapp\target\classes started by Chirag.Partole in D:\springAssignments\13-miniproject-bankapp)
+2024-08-29T10:04:06.457+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.techlabs.bankapp.Application         : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T10:04:06.510+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-29T10:04:06.511+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-29T10:04:07.220+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T10:04:07.329+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 4 JPA repository interfaces.
+2024-08-29T10:04:07.992+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T10:04:08.009+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T10:04:08.009+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T10:04:08.089+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T10:04:08.090+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1577 ms
+2024-08-29T10:04:08.408+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T10:04:08.502+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T10:04:08.575+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T10:04:09.246+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T10:04:09.310+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T10:04:10.152+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ae31fc9
+2024-08-29T10:04:10.157+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T10:04:12.466+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T10:04:12.617+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T10:04:13.564+05:30  WARN 10036 --- [12-miniproject-bankapp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T10:04:14.327+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-29T10:04:14.402+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T10:04:14.423+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.techlabs.bankapp.Application         : Started Application in 8.425 seconds (process running for 9.081)
+2024-08-29T10:04:51.912+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T10:04:51.912+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T10:04:51.914+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-29T10:05:20.595+05:30  WARN 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.techlabs.bankapp.entity.TransactionType` from String "TRANSAFER": not one of the values accepted for Enum class: [CREDIT, TRANSFER, DEBIT]]
+2024-08-29T10:05:30.040+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-5] c.t.bankapp.service.CustomerServiceImpl  : transaction credit saved : 1
+2024-08-29T10:05:30.046+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-5] c.t.bankapp.service.CustomerServiceImpl  : senderAccount saved: 98765
+2024-08-29T10:05:30.049+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-5] c.t.bankapp.service.CustomerServiceImpl  : receiver saved: 12345
+2024-08-29T10:05:30.060+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-5] c.t.bankapp.service.CustomerServiceImpl  : transaction debit saved: 2
+2024-08-29T10:05:30.063+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-5] c.t.bankapp.service.CustomerServiceImpl  : senderAccount saved: 12345
+2024-08-29T10:05:30.067+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-5] c.t.bankapp.service.CustomerServiceImpl  : receiver saved: 98765
+2024-08-29T10:05:30.067+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-5] c.t.bankapp.service.CustomerServiceImpl  : transfer done
+2024-08-29T10:07:33.211+05:30  INFO 10036 --- [12-miniproject-bankapp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-29T10:07:33.231+05:30  INFO 10036 --- [12-miniproject-bankapp] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T10:07:33.242+05:30  INFO 10036 --- [12-miniproject-bankapp] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T10:07:33.252+05:30  INFO 10036 --- [12-miniproject-bankapp] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T10:07:33.345+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.techlabs.bankapp.Application         : Starting Application using Java 21.0.3 with PID 10036 (D:\springAssignments\13-miniproject-bankapp\target\classes started by Chirag.Partole in D:\springAssignments\13-miniproject-bankapp)
+2024-08-29T10:07:33.345+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.techlabs.bankapp.Application         : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T10:07:33.606+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T10:07:33.655+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2024-08-29T10:07:33.765+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T10:07:33.766+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T10:07:33.767+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T10:07:33.787+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T10:07:33.787+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 439 ms
+2024-08-29T10:07:33.835+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T10:07:33.838+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T10:07:33.848+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T10:07:33.848+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-08-29T10:07:33.871+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ccf86ee
+2024-08-29T10:07:33.871+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-08-29T10:07:33.971+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T10:07:34.009+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T10:07:34.124+05:30  WARN 10036 --- [12-miniproject-bankapp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T10:07:34.217+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-29T10:07:34.231+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T10:07:34.236+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] com.techlabs.bankapp.Application         : Started Application in 0.928 seconds (process running for 208.894)
+2024-08-29T10:07:34.238+05:30  INFO 10036 --- [12-miniproject-bankapp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-29T10:07:42.795+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T10:07:42.795+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T10:07:42.796+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T10:07:42.831+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-3] c.t.bankapp.service.CustomerServiceImpl  : transaction debit saved: 1
+2024-08-29T10:07:42.836+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-3] c.t.bankapp.service.CustomerServiceImpl  : senderAccount saved: 98765
+2024-08-29T10:07:42.839+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-3] c.t.bankapp.service.CustomerServiceImpl  : receiver saved: 12345
+2024-08-29T10:07:42.849+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-3] c.t.bankapp.service.CustomerServiceImpl  : transaction credit saved : 2
+2024-08-29T10:07:42.852+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-3] c.t.bankapp.service.CustomerServiceImpl  : senderAccount saved: 12345
+2024-08-29T10:07:42.855+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-3] c.t.bankapp.service.CustomerServiceImpl  : receiver saved: 98765
+2024-08-29T10:07:42.855+05:30  INFO 10036 --- [12-miniproject-bankapp] [http-nio-8080-exec-3] c.t.bankapp.service.CustomerServiceImpl  : transfer done

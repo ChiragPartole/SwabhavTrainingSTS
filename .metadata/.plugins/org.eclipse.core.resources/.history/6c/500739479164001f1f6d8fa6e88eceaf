@@ -1,0 +1,100 @@
+package com.techlabs.bankapp.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import com.techlabs.bankapp.dto.AccountDto;
+import com.techlabs.bankapp.dto.PageResponse;
+import com.techlabs.bankapp.entity.Account;
+import com.techlabs.bankapp.entity.Customer;
+import com.techlabs.bankapp.repository.AccountRepository;
+import com.techlabs.bankapp.repository.CustomerRepository;
+
+@Service
+public class AccountServiceImpl implements AccountService{
+
+	@Autowired
+	private AccountRepository accountRepo;
+	
+	@Autowired
+	private CustomerRepository customerRepo;
+	
+	private Account toAccountMapper(AccountDto accountDto) {
+		Account account = new Account();
+		account.setAccountNumber(accountDto.getAccountNumber());
+		account.setBalance(accountDto.getBalance());
+		
+		return account;
+	}
+	
+	private AccountDto toAccountDtoMapper(Account account) {
+		AccountDto accountDto = new AccountDto();
+		accountDto.setAccountNumber(account.getAccountNumber());
+		accountDto.setBalance(account.getBalance());
+		
+		return accountDto;
+	}
+	
+	@Override
+	public PageResponse<AccountDto> viewAllAccounts(int pageNoValue, int pageSizeValue) {
+		Pageable pageable = PageRequest.of(pageNoValue, pageSizeValue);
+		Page<Account> accountPage = accountRepo.findAll(pageable);
+		PageResponse<AccountDto> response = new PageResponse<AccountDto>();
+		
+		response.setTotalPages(accountPage.getTotalPages());
+		response.setTotalElements(accountPage.getTotalElements());
+		response.setSize(accountPage.getSize());
+		response.setLastPage(accountPage.isLast());
+		
+		List<AccountDto> accountDtoList = new ArrayList<>();
+		
+		accountPage.getContent().forEach((user)->{
+			AccountDto userdto = toAccountDtoMapper(user);
+			
+			accountDtoList.add(userdto);
+		});
+		
+		response.setContent(accountDtoList);
+		return response;
+	}
+
+	@Override
+	public AccountDto addAccount(AccountDto accountDto) {
+		Account account = toAccountMapper(accountDto);
+		
+		//do something about customer id
+		int customerID=1;
+		
+		allocateCustomerToAccount(customerID,account);
+		return toAccountDtoMapper(account);
+	}
+
+	private void allocateCustomerToAccount(int customerID, Account account) {
+		Customer customer = customerRepo.findById(customerID)
+				.orElseThrow(() -> new RuntimeException("Customer not found"));
+
+		account.setCustomer(customer);
+
+		accountRepo.save(account);
+		
+	}
+
+	@Override
+	public Account updateAccount(AccountDto accountDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteAccount(int accountID) {
+		accountRepo.deleteById(accountID);
+		
+	}
+
+}

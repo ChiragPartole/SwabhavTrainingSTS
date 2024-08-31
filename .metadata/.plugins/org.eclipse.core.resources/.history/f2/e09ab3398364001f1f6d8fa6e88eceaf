@@ -1,0 +1,57 @@
+package com.techlabs.bankapp.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+
+import com.techlabs.bankapp.dto.CustomerDto;
+import com.techlabs.bankapp.dto.PageResponse;
+import com.techlabs.bankapp.entity.Customer;
+import com.techlabs.bankapp.repository.CustomerRepository;
+
+public class CustomerServiceImpl implements CustomerService{
+
+	@Autowired
+	private CustomerRepository customerRepo;
+	
+	@Override
+	public PageResponse<Customer> viewAllCustomers(int pageNoValue, int pageSizeValue) {
+		Pageable pageable = PageRequest.of(pageNoValue, pageSizeValue);
+		Page<Customer> customerPage = customerRepo.findAll(pageable);
+		
+		PageResponse<Customer> customerPageResponse = new PageResponse<Customer>();
+
+		customerPageResponse.setContent(customerPage.getContent());
+		customerPageResponse.setLastPage(customerPage.isLast());
+		customerPageResponse.setSize(customerPage.getSize());
+		customerPageResponse.setTotalElements(customerPage.getTotalElements());
+		customerPageResponse.setTotalPages(customerPage.getTotalPages());
+		return customerPageResponse;
+	}
+
+	@Override
+	public Customer addCustomer(CustomerDto customerDto) {
+		
+	    Customer customer = new Customer();
+	    customer.setFirstName(customerDto.getFirstName());
+	    customer.setLastName(customerDto.getLastName());
+	    customer.setEmail(customerDto.getEmail());
+	    
+	    return customerRepo.save(customer);
+	}
+	
+	
+	@Override
+	public Customer updateCustomer(CustomerDto customerDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	@Override
+	public void deleteCustomer(int customerID) {
+		customerRepo.deleteById(customerID);
+	}
+
+}

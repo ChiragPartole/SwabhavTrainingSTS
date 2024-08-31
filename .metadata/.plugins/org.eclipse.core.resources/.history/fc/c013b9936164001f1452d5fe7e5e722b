@@ -1,0 +1,5 @@
+package com.techlabs.mappings.dto;
+
+public class RoleDto {
+
+}

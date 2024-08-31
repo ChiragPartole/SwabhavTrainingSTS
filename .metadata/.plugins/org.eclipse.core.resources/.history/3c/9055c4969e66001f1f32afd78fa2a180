@@ -1,0 +1,12 @@
+package com.techlabs.jwtsecurity.repository;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.techlabs.jwtsecurity.entity.Role;
+
+public interface RoleRepository extends JpaRepository<Role, Integer>{
+
+	Optional<Role> findByRollname(String rolename);
+}

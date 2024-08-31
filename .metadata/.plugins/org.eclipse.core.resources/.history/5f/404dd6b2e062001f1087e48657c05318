@@ -1,0 +1,6 @@
+package com.techlabs.bankapp.service;
+
+public interface UserService {
+
+	PageResponse<User> viewAllUsers(int pageNo,int pageSize);
+}

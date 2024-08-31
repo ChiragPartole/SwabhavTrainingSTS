@@ -1,0 +1,14 @@
+
+cloudinary.cloud_name=dchbgstuo
+cloudinary.api_key=587545198176285
+cloudinary.api_secret=hRKsRhNsjyo3gdw6I6up1cmDw4g
+
+
+
+spring.datasource.url=jdbc:mysql://localhost:3306/cloudinary
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jackson.serialization.fail-on-empty-beans=false
+

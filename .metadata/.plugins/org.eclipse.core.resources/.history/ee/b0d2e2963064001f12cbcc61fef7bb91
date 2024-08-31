@@ -1,0 +1,14 @@
+package com.techlabs.mappings.service;
+
+import java.util.List;
+
+import com.techlabs.mappings.entity.Address;
+import com.techlabs.mappings.entity.Student;
+
+public interface StudentService {
+
+	Student addStudent(Student student);
+	List<Student> getStudent();
+	Address getAddressByRollNumber(int rollnumber);
+	Address updateAddressByRollNumber(int rollnumber, String city);
+}

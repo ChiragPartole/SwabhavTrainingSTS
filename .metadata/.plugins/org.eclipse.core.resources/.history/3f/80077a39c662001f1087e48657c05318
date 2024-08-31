@@ -1,0 +1,32 @@
+package com.techlabs.cashmgmt.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.techlabs.cashmgmt.dto.PageResponse;
+import com.techlabs.cashmgmt.entity.Bank;
+import com.techlabs.cashmgmt.service.BankService;
+
+@RestController
+@RequestMapping("/cashmanagementapp")
+public class BankController {
+
+	@Autowired
+	private BankService bankService;
+	
+	@GetMapping("/banks")
+	public ResponseEntity<PageResponse<Bank>> getAllBanks(
+			@RequestParam(required = false) Integer pageNo,
+			@RequestParam(required = false) Integer pageSize)
+	{
+		 int pageNoValue = (pageNo != null) ? pageNo : 0; 
+		  int pageSizeValue = (pageSize != null) ? pageSize : Integer.MAX_VALUE;
+		  
+		  return ResponseEntity.ok(bankService.getAllBanks(pageNoValue, pageSizeValue));
+	}
+	
+}

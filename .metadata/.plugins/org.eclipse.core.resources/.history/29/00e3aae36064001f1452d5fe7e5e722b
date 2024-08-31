@@ -1,0 +1,5 @@
+package com.techlabs.cashmgmt.repository;
+
+public interface UserRepository {
+
+}

@@ -1,0 +1,14 @@
+package com.techlabs.mappings.service;
+
+import java.util.List;
+
+import com.techlabs.mappings.dto.InstructorDto;
+import com.techlabs.mappings.entity.Course;
+import com.techlabs.mappings.entity.Instructor;
+
+public interface InstructorService {
+
+	InstructorDto addInstructor(InstructorDto instructorDto);
+
+	Instructor allocateCourses(int instructorID, List<Course> courses);
+}

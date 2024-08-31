@@ -1,0 +1,5 @@
+package com.techlabs.jwtsecurity.service;
+
+public interface AuthService {
+
+}

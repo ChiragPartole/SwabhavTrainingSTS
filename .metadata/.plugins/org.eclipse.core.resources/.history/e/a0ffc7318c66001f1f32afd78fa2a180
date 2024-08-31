@@ -1,0 +1,5 @@
+package com.techlabs.jwtsecurity.repository;
+
+public interface UserRepository {
+
+}

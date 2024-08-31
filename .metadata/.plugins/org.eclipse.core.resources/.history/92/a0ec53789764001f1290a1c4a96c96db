@@ -1,0 +1,18 @@
+package com.techlabs.bankapp.service;
+
+import com.techlabs.bankapp.dto.PageResponse;
+import com.techlabs.bankapp.dto.TransactionDto;
+import com.techlabs.bankapp.entity.Transaction;
+
+import jakarta.servlet.http.HttpSession;
+
+public interface TransactionService {
+
+	PageResponse<Transaction> viewAllTransactions(int pageNo,int pageSize);
+	void deleteTransaction(int transactionID);
+	Transaction updateTransaction(TransactionDto transactionDto);
+	
+	
+	Transaction addTransaction(TransactionDto transactionDto, HttpSession session);
+	
+}

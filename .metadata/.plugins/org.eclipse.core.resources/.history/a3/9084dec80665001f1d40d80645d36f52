@@ -1,0 +1,8 @@
+spring.application.name=12-advancedmappings-app
+spring.datasource.url = jdbc:mysql://localhost:3306/mappingstudentdb
+spring.datasource.username = root
+spring.datasource.password = root
+spring.jpa.hibernate.ddl-auto = update
+spring.jpa.show-sql=true
+
+logging.level.org.hibernate.springframework =error

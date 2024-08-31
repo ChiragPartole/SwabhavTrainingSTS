@@ -1,0 +1,92 @@
+package com.techlabs.mappings.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.techlabs.mappings.dto.PageResponse;
+import com.techlabs.mappings.dto.StudentDto;
+import com.techlabs.mappings.entity.Address;
+import com.techlabs.mappings.entity.Student;
+import com.techlabs.mappings.repository.StudentRepository;
+@Service
+public class StudentServiceImpl implements StudentService{
+	
+	@Autowired
+	private StudentRepository studentRepo;
+	
+	private StudentDto toStudentDtoMapper(Student student) {
+		StudentDto studentDto = new StudentDto();
+		studentDto.setAge(student.getAge());
+		studentDto.setName(student.getName());
+		studentDto.setRollNumber(student.getRollNumber());
+		
+		return studentDto;
+	}
+	
+	private Student toStudentMapper(StudentDto studentDto) {
+		Student student = new Student();
+		student.setAge(studentDto.getAge());
+		student.setName(studentDto.getName());
+
+		return student;
+	}
+	@Override
+	public StudentDto addStudent(StudentDto studentDto) {
+		Student student = toStudentMapper(studentDto);
+		
+		student =  studentRepo.save(student) ;
+		
+		return toStudentDtoMapper(student);
+	}
+
+	@Override
+	public List<Student> getStudent() {
+		// TODO Auto-generated method stub
+		return studentRepo.findAll();
+	}
+
+	@Override
+	public Address getAddressByRollNumber(int rollnumber) {
+		// TODO Auto-generated method stub
+		Optional<Student> studentOptional =  studentRepo.findById(rollnumber);
+		Student existingStudent = studentOptional.get();
+		return existingStudent.getAddress();
+		
+	}
+
+
+	@Override
+	public Address updateAddressByRollNumber(int rollnumber, String city) {
+
+		Optional<Student> studentOptional =  studentRepo.findById(rollnumber);
+		Student existingStudent = studentOptional.get();
+		Address existingAddress = existingStudent.getAddress();
+		
+		existingAddress.setCity(city);
+		studentRepo.save(existingStudent);
+		return existingAddress;
+	}
+
+	@Override
+	public PageResponse<StudentDto> getAllStudents(int pageNo, int pageSize) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public StudentDto getStudentByRollNumber(int rollnumber) {
+		Student student = studentRepo.findById(rollnumber)
+									 .orElseThrow(()-> new NullPointerException("Student not found"));
+		return toStudentDtoMapper(student);
+	}
+
+	@Override
+	public StudentDto assignCourses(int rollnumber, List<Integer> courseIds) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

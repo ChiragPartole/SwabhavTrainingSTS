@@ -1,0 +1,56 @@
+package com.techlabs.bankapp.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import com.techlabs.bankapp.dto.AccountDto;
+import com.techlabs.bankapp.dto.PageResponse;
+import com.techlabs.bankapp.entity.Account;
+
+import com.techlabs.bankapp.repository.AccountRepository;
+
+@Service
+public class AccountServiceImpl implements AccountService{
+
+	@Autowired
+	private AccountRepository accountRepo;
+	
+	@Override
+	public PageResponse<Account> viewAllAccounts(int pageNoValue, int pageSizeValue) {
+		Pageable pageable = PageRequest.of(pageNoValue, pageSizeValue);
+		Page<Account> accountPage = accountRepo.findAll(pageable);
+		
+		PageResponse<Account> accountPageResponse = new PageResponse<Account>();
+
+		accountPageResponse.setContent(accountPage.getContent());
+		accountPageResponse.setLastPage(accountPage.isLast());
+		accountPageResponse.setSize(accountPage.getSize());
+		accountPageResponse.setTotalElements(accountPage.getTotalElements());
+		accountPageResponse.setTotalPages(accountPage.getTotalPages());
+		return accountPageResponse;
+	}
+
+	@Override
+	public Account addAccount(AccountDto accountDto) {
+		Account account = new Account();
+		account.setAccountNumber(accountDto.getAccountNumber());
+		account.setBalance(accountDto.getBalance());
+		return accountRepo.save(account);
+	}
+
+	@Override
+	public Account updateAccount(AccountDto accountDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteAccount(int accountID) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

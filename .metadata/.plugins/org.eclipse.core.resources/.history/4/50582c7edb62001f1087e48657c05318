@@ -1,0 +1,13 @@
+package com.techlabs.bankapp.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "roles")
+public class Roles {
+
+	private int roleID;
+	
+	private String roleName
+}

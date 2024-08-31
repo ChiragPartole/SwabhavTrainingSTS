@@ -1,0 +1,73 @@
+package com.techlabs.cashmgmt.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import com.techlabs.cashmgmt.dto.PageResponse;
+import com.techlabs.cashmgmt.dto.UserDto;
+import com.techlabs.cashmgmt.entity.User;
+import com.techlabs.cashmgmt.repository.UserRepository;
+
+
+@Service
+public class UserServiceImpl implements UserService{
+
+	@Autowired
+	private UserRepository userRepo;
+	
+	private UserDto toUserDtoMapper(User user) {
+		UserDto userdto = new UserDto();
+		userdto.setUserName(user.getUsername());
+		userdto.setPassword(user.getPassword());
+		return userdto;
+	}
+	
+	private User toUserMapper(UserDto userDto) {
+		User user = new User();
+		user.setUsername(userDto.getUserName());
+		user.setPassword(userDto.getPassword());
+		return user;
+	}
+	
+	@Override
+	public PageResponse<UserDto> getAllUsers(int pageNo, int pageSize) {
+		Pageable pageable = PageRequest.of(pageNo, pageSize);
+		Page<User> userPage = userRepo.findAll(pageable);
+		PageResponse<UserDto> response = new PageResponse<UserDto>();
+		
+		response.setTotalPages(userPage.getTotalPages());
+		response.setTotalElements(userPage.getTotalElements());
+		response.setSize(userPage.getSize());
+		response.setLastPage(userPage.isLast());
+		
+		List<UserDto> userDtoList = new ArrayList<>();
+		
+		userPage.getContent().forEach((user)->{
+			UserDto userdto = toUserDtoMapper(user);
+			
+			userDtoList.add(userdto);
+		});
+		
+		response.setContent(userDtoList);
+		return response;
+	}
+
+	@Override
+	public UserDto addUser(UserDto userDto) {
+		User user = toUserMapper(userDto);
+		user=  userRepo.save(user);
+		return toUserDtoMapper(user);
+	}
+
+	@Override
+	public void deleteUser(int userID) {
+		userRepo.deleteById(userID);
+	}
+
+}

@@ -1,0 +1,127 @@
+package com.techlabs.mappings.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.convert.converter.Converter;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import com.techlabs.mappings.dto.CourseDto;
+import com.techlabs.mappings.dto.InstructorDto;
+import com.techlabs.mappings.entity.Course;
+import com.techlabs.mappings.entity.Instructor;
+import com.techlabs.mappings.repository.CourseRepository;
+import com.techlabs.mappings.repository.InstructorRepository;
+
+@Service
+public class InstructorServiceImpl implements InstructorService{
+
+	@Autowired
+	private InstructorRepository instructorRepo;
+	@Autowired
+	private CourseRepository courseRepo;
+	
+	@Override
+	public InstructorDto addInstructor(InstructorDto instructorDto) {
+		Instructor instructor = toInstructorMapper(instructorDto);
+		
+		instructor =  instructorRepo.save(instructor);
+		
+		return (toInstructorDtoMapper(instructor));
+		
+	}
+
+	private Instructor toInstructorMapper(InstructorDto instructorDto) {
+		Instructor instructor = new Instructor();
+		instructor.setInstructorName(instructorDto.getInstructorName());
+		instructor.setEmail(instructorDto.getEmail());
+		instructor.setQualification(instructorDto.getQualification());
+		return instructor;
+	}
+	
+	private InstructorDto toInstructorDtoMapper(Instructor instructor) {
+		InstructorDto instructorDto = new InstructorDto();
+		instructorDto.setInstructorID(instructor.getInstructorID());
+		instructorDto.setInstructorName(instructor.getInstructorName());
+		instructorDto.setEmail(instructor.getEmail());
+		instructorDto.setQualification(instructor.getQualification());
+		return instructorDto;
+	}
+	
+	@Override
+	public Instructor allocateCourses(int instructorID, List<Course> courses) {
+		
+		Optional<Instructor> optionalInstructor = instructorRepo.findById(instructorID);
+		if(!optionalInstructor.isPresent())
+			return null;
+		
+		Instructor dbInstructor =  optionalInstructor.get();
+		
+		List<Course> dbCourse = dbInstructor.getCourses();
+		
+		courses.forEach((course)->{
+			Course temp = courseRepo.findById(course.getCourseID()).get();
+			temp.setInstructor(dbInstructor);
+			dbCourse.add(temp);
+		}
+		);
+		
+		dbInstructor.setCourses(dbCourse);
+		return instructorRepo.save(dbInstructor);
+	}
+
+	@Override
+	public InstructorDto getInstructor(int instructorID) {
+		Optional<Instructor> optionalInstructor = instructorRepo.findById(instructorID);
+		if(!optionalInstructor.isPresent())
+			return null;
+		
+		Instructor dbInstructor =  optionalInstructor.get();
+		
+		return toInstructorDtoMapper(dbInstructor);
+	}
+
+	@Override
+	public List<CourseDto> getInstructorCourses(int instructorID) {
+		InstructorDto instructorDto= getInstructor(instructorID);
+		Instructor instructor = toInstructorMapper(instructorDto);
+		List<Course> courseList = instructor.getCourses();
+		
+		List<CourseDto> courseDtoList = new ArrayList<CourseDto>();
+		
+		for(Course course: courseList) {
+			CourseDto courseDto =new CourseDto();
+			courseDto.setCourseName(course.getCourseName());
+			courseDto.setDuration(course.getDuration());
+			courseDto.setFees(course.getFees());
+			
+			courseDtoList.add(courseDto);
+			
+		}
+		
+		return courseDtoList;
+	}
+
+	@Override
+	public Page<List<InstructorDto>> getAllInstructors(int pageNo, int pageSize) {
+		Pageable pageable = PageRequest.of(pageNo, pageSize);
+		Page<Instructor> instructorPage = instructorRepo.findAll(pageable);
+		Page<InstructorDto> instructorDtoPage = instructorPage.map
+				(new Converter<Instructor,InstructorDto>){
+			@Override
+			public InstructorDto convert(Instructor instructor) {
+				return toInstructorDtoMapper(instructor);
+			}
+		
+		
+		
+		
+		return null;
+	}
+
+}

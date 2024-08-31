@@ -1,0 +1,5 @@
+package com.techlabs.cashmgmt.service;
+
+public class BankServiceImpl {
+
+}

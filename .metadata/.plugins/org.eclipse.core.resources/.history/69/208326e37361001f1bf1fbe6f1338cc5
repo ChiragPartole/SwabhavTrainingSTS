@@ -1,0 +1,15 @@
+package com.techlabs.cashmgmt.service;
+
+import com.techlabs.cashmgmt.dto.PageResponse;
+import com.techlabs.cashmgmt.entity.Salary;
+import com.techlabs.cashmgmt.entity.SalaryTransaction;
+
+public interface SalaryService {
+
+	PageResponse<Salary> getSalaryDetails(pageNo, pageSize);
+	void addSalaryDetails();
+	void updateSalaryDetails();
+	void deleteSalaryDetails();
+	
+	SalaryTransaction getSalaryTransactionByID();
+}

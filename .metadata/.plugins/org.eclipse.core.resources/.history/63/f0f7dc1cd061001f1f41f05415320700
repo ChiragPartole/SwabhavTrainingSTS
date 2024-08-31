@@ -1,0 +1,5 @@
+package com.techlabs.mappings.repository;
+
+public interface CourseRepository {
+
+}

@@ -1,0 +1,30 @@
+package com.techlabs.bankapp.entity;
+
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Entity
+@Table(name = "transactions")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+public class Transaction {
+
+	private int transactionID;
+	private double amount;
+	private long senderAccNo;
+	private long receiverAccNo;
+	private TransactionType transactionType;
+	
+}

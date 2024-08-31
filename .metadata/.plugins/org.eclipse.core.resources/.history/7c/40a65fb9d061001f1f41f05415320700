@@ -1,0 +1,19 @@
+package com.techlabs.mappings.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.techlabs.mappings.entity.Instructor;
+import com.techlabs.mappings.repository.InstructorRepository;
+
+public class InstructorServiceImpl implements InstructorService{
+
+	@Autowired
+	private InstructorRepository instructorRepo;
+	
+	@Override
+	public Instructor addInstructor(Instructor instructor) {
+		// TODO Auto-generated method stub
+		return instructorRepo.save(instructor);
+	}
+
+}

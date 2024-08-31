@@ -1,0 +1,127 @@
+package com.techlabs.bankapp.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import com.techlabs.bankapp.dto.PageResponse;
+import com.techlabs.bankapp.dto.TransactionDto;
+import com.techlabs.bankapp.entity.Account;
+import com.techlabs.bankapp.entity.Transaction;
+import com.techlabs.bankapp.entity.TransactionType;
+import com.techlabs.bankapp.repository.AccountRepository;
+import com.techlabs.bankapp.repository.TransactionRepository;
+
+import jakarta.servlet.http.HttpSession;
+
+@Service
+public class TransactionServiceImpl implements TransactionService{
+
+	@Autowired
+	private TransactionRepository transactionRepo;
+	
+	@Autowired
+	private AccountRepository accountRepo;
+	
+	@Override
+	public PageResponse<Transaction> viewAllTransactions(int pageNo, int pageSize) {
+	    Pageable pageable = PageRequest.of(pageNo, pageSize);
+	    Page<Transaction> transactionPage = transactionRepo.findAll(pageable);
+	    PageResponse<Transaction> transactionPageResponse = new PageResponse<>();
+	    
+	    transactionPageResponse.setContent(transactionPage.getContent());
+	    transactionPageResponse.setLastPage(transactionPage.isLast());
+	    transactionPageResponse.setSize(transactionPage.getSize());
+	    transactionPageResponse.setTotalElements(transactionPage.getTotalElements());
+	    transactionPageResponse.setTotalPages(transactionPage.getTotalPages());
+
+	    return transactionPageResponse;
+	}
+
+
+	@Override
+	public TransactionDto addTransaction(TransactionDto transactionDto, HttpSession session) {
+		long senderAccNo = transactionDto.getSenderAccountNumber();
+		Account senderAccount = accountRepo.findByAccountNumber(senderAccNo);
+		if(senderAccount ==null) {
+			System.out.println("no sender account found");
+			return null;
+		}
+		long receiverAccNo = transactionDto.getReceiverAccountNumber();
+		Account receiverAccount = accountRepo.findByAccountNumber(receiverAccNo);
+		if(receiverAccount ==null) {
+			System.out.println("no receiver account found");
+			return null;
+		}
+		
+		if(transactionDto.getTransactionType() == TransactionType.CREDIT)
+			transactionDto	=credit(senderAccount,transactionDto);
+		
+		Transaction transaction = new Transaction();
+		
+		
+	}
+
+	private TransactionDto credit(Account senderAccount, TransactionDto transactionDto) {
+		Transaction transaction = new Transaction();
+		
+		transaction.setAmount(transactionDto.getAmount());
+		transaction.setTransactionType(TransactionType.CREDIT);
+		transaction.setSenderAccount(senderAccount);
+		transaction.setReceiverAccount(senderAccount);
+		
+		senderAccount.setBalance(senderAccount.getBalance()+transactionDto.getAmount());
+		
+		
+		List<Transaction> existingTransactions = senderAccount.getSenderAccounts();
+		
+		if(existingTransactions ==null)
+			existingTransactions = new ArrayList<>();
+		
+		existingTransactions.add(transaction);
+		
+		senderAccount.setSenderAccounts(existingTransactions);
+		senderAccount.setReceiverAccounts(existingTransactions);
+		
+		accountRepo.save(senderAccount);
+		transactionRepo.save(transaction);
+		return transactionDto;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	@Override
+	public void deleteTransaction(int transactionID) {
+		transactionRepo.deleteById(transactionID);		
+	}
+
+	@Override
+	public Transaction updateTransaction(TransactionDto transactionDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+
+
+
+
+
+
+
+}

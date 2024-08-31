@@ -1,0 +1,19 @@
+package com.techlabs.bankapp.service;
+
+import com.techlabs.bankapp.dto.AccountDto;
+import com.techlabs.bankapp.dto.PageResponse;
+import com.techlabs.bankapp.entity.Account;
+
+import jakarta.servlet.http.HttpSession;
+
+public interface AccountService {
+
+	PageResponse<AccountDto> viewAllAccounts(int pageNoValue, int pageSizeValue);
+	AccountDto addAccount(AccountDto accountDto,HttpSession session);
+	Account updateAccount(AccountDto accountDto);
+	void deleteAccount(int accountID);
+	
+	
+	AccountDto viewAccountDetails(HttpSession session);
+
+}

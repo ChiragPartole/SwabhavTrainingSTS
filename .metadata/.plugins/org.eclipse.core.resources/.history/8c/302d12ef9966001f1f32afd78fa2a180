@@ -1,0 +1,22 @@
+package com.techlabs.jwtsecurity.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+import com.techlabs.jwtsecurity.security.JwtAuthenticationEntryPoint;
+import com.techlabs.jwtsecurity.security.JwtAuthenticationFilter;
+
+@EnableMethodSecurity
+@Configuration
+public class SecutiryConfig {
+
+	@Autowired
+	private UserDetailsService userDetailsService;
+	@Autowired
+	private JwtAuthenticationFilter jwtAuthenticationFilter;
+	@Autowired
+	private JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
+	
+}

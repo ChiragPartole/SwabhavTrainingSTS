@@ -1,0 +1,14 @@
+package com.techlabs.bankapp.service;
+
+import com.techlabs.bankapp.dto.PageResponse;
+import com.techlabs.bankapp.dto.TransactionDto;
+import com.techlabs.bankapp.entity.Transaction;
+
+public interface TransactionService {
+
+	PageResponse<Transaction> viewAllTransactions(int pageNo,int pageSize);
+	Transaction addTransaction(TransactionDto transactionDto);
+	void deleteTransaction(int transactionID);
+	Transaction updateTransaction(TransactionDto transactionDto);
+	
+}

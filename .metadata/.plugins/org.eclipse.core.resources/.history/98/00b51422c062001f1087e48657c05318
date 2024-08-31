@@ -1,0 +1,11 @@
+package com.techlabs.cashmgmt.service;
+
+import com.techlabs.cashmgmt.dto.PageResponse;
+import com.techlabs.cashmgmt.entity.SalaryAccount;
+
+public interface SalaryAccountService {
+
+	PageResponse<SalaryAccount> getAllSalaryAccounts(int pageNo,int pageSize);
+	SalaryAccount addSalaryAccount(SalaryAccount salaryAccount);
+	
+}

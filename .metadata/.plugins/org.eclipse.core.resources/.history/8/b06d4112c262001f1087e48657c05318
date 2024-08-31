@@ -1,0 +1,5 @@
+package com.techlabs.cashmgmt.dto;
+
+public class SalaryTransactionDto {
+
+}

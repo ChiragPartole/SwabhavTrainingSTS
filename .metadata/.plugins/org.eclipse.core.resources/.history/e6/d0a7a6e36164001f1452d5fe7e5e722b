@@ -1,0 +1,11 @@
+package com.techlabs.cashmgmt.service;
+
+import com.techlabs.cashmgmt.dto.PageResponse;
+import com.techlabs.cashmgmt.dto.UserDto;
+
+public interface UserService {
+
+	PageResponse<UserDto> getAllUsers(int pageNo,int pageSize);
+	UserDto addUser(UserDto userDto);
+	
+}

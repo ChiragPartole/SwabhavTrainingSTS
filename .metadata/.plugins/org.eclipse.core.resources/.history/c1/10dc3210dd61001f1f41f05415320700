@@ -1,0 +1,9 @@
+package com.techlabs.mappings.service;
+
+import com.techlabs.mappings.dto.InstructorDto;
+import com.techlabs.mappings.entity.Instructor;
+
+public interface InstructorService {
+
+	Instructor addInstructor(InstructorDto instructorDto);
+}

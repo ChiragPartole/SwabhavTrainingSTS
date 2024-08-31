@@ -1,0 +1,51 @@
+package com.techlabs.bankapp.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+
+import com.techlabs.bankapp.dto.PageResponse;
+import com.techlabs.bankapp.dto.TransactionDto;
+import com.techlabs.bankapp.entity.Transaction;
+import com.techlabs.bankapp.repository.TransactionRepository;
+
+public class TransactionServiceImpl implements TransactionService{
+
+	@Autowired
+	private TransactionRepository transactionRepo;
+	
+	@Override
+	public PageResponse<Transaction> viewAllTransactions(int pageNo, int pageSize) {
+	    Pageable pageable = PageRequest.of(pageNo, pageSize);
+	    Page<Transaction> transactionPage = transactionRepo.findAll(pageable);
+	    PageResponse<Transaction> transactionPageResponse = new PageResponse<>();
+	    
+	    transactionPageResponse.setContent(transactionPage.getContent());
+	    transactionPageResponse.setLastPage(transactionPage.isLast());
+	    transactionPageResponse.setSize(transactionPage.getSize());
+	    transactionPageResponse.setTotalElements(transactionPage.getTotalElements());
+	    transactionPageResponse.setTotalPages(transactionPage.getTotalPages());
+
+	    return transactionPageResponse;
+	}
+
+	@Override
+	public Transaction addTransaction(TransactionDto transactionDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteTransaction(int transactionID) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Transaction updateTransaction(TransactionDto transactionDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,213 @@
+package com.techlabs.bankapp.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import com.techlabs.bankapp.dto.PageResponse;
+import com.techlabs.bankapp.dto.TransactionDto;
+import com.techlabs.bankapp.entity.Account;
+import com.techlabs.bankapp.entity.Transaction;
+import com.techlabs.bankapp.entity.TransactionType;
+import com.techlabs.bankapp.repository.AccountRepository;
+import com.techlabs.bankapp.repository.TransactionRepository;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class TransactionServiceImpl implements TransactionService{
+
+	@Autowired
+	private TransactionRepository transactionRepo;
+	
+	@Autowired
+	private AccountRepository accountRepo;
+	
+	private static final Logger logger = LoggerFactory.getLogger(CustomerServiceImpl.class);
+	
+	@Override
+	public PageResponse<TransactionDto> viewAllTransactions(int pageNo, int pageSize) {
+	    Pageable pageable = PageRequest.of(pageNo, pageSize);
+	    Page<Transaction> transactionPage = transactionRepo.findAll(pageable);
+	    PageResponse<Transaction> transactionPageResponse = new PageResponse<>();
+	    
+	    transactionPageResponse.setContent(transactionPage.getContent());
+	    transactionPageResponse.setLastPage(transactionPage.isLast());
+	    transactionPageResponse.setSize(transactionPage.getSize());
+	    transactionPageResponse.setTotalElements(transactionPage.getTotalElements());
+	    transactionPageResponse.setTotalPages(transactionPage.getTotalPages());
+
+	    return transactionPageResponse;
+	}
+
+
+	@Override
+	public TransactionDto addTransaction(TransactionDto transactionDto) {
+		long senderAccNo = transactionDto.getSenderAccountNumber();
+		Account senderAccount = accountRepo.findByAccountNumber(senderAccNo);
+		if(senderAccount ==null) {
+			System.out.println("no sender account found");
+			return null;
+		}
+		
+		long receiverAccNo = transactionDto.getReceiverAccountNumber();
+		Account receiverAccount = accountRepo.findByAccountNumber(receiverAccNo);
+		if(receiverAccount ==null) {
+			System.out.println("no receiver account found");
+			return null;
+		}
+		
+		Transaction transaction = new Transaction();
+		
+		if(transactionDto.getTransactionType() == TransactionType.CREDIT)
+			transaction = credit(senderAccount,transactionDto);
+		if(transactionDto.getTransactionType() == TransactionType.DEBIT)
+			transaction = debit(senderAccount,transactionDto);
+		if(transactionDto.getTransactionType() == TransactionType.DEBIT)
+			transaction = transfer(senderAccount,receiverAccount,transactionDto);
+		 if (transaction != null) {
+		        transactionRepo.save(transaction);
+		        logger.info("transaction saved: "+transaction.getTransactionID());
+		        
+		        accountRepo.save(senderAccount);
+		        logger.info("senderAccount saved: "+senderAccount.getAccountNumber());
+		        
+		        accountRepo.save(receiverAccount);
+		        logger.info("receiver saved: "+receiverAccount.getAccountNumber());
+		    }
+
+		    return transactionDto;
+		
+		
+	}
+
+	private Transaction transfer(Account senderAccount, Account receiverAccount, TransactionDto transactionDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	private Transaction credit(Account senderAccount, TransactionDto transactionDto) {
+		Transaction transaction = new Transaction();
+	    
+	    // Set transaction details
+	    transaction.setAmount(transactionDto.getAmount());
+	    transaction.setTransactionType(TransactionType.CREDIT);
+	    transaction.setSenderAccount(senderAccount);
+
+	    // Find and set the receiver account
+	    long receiverAccNo = transactionDto.getReceiverAccountNumber();
+	    Account receiverAccount = accountRepo.findByAccountNumber(receiverAccNo);
+	    
+	    if (receiverAccount == null) {
+	        System.out.println("Receiver account not found");
+	        return null;  // Or handle it according to your application's needs
+	    }
+	    transaction.setReceiverAccount(receiverAccount);
+
+	    // Update receiver's balance
+	    double existingBalance = receiverAccount.getBalance();
+	    double amount = transactionDto.getAmount();
+	    double newBalance = existingBalance + amount;
+	    receiverAccount.setBalance(newBalance);
+
+	    // Update sender's transactions
+	    List<Transaction> senderTransactions = senderAccount.getSenderAccountTransactions();
+	    if (senderTransactions == null) {
+	        senderTransactions = new ArrayList<>();
+	    }
+	    senderTransactions.add(transaction);
+	    senderAccount.setSenderAccountTransactions(senderTransactions);
+
+	    // Update receiver's transactions
+	    List<Transaction> receiverTransactions = receiverAccount.getReceiverAccountTransactions();
+	    if (receiverTransactions == null) {
+	        receiverTransactions = new ArrayList<>();
+	    }
+	    receiverTransactions.add(transaction);
+	    receiverAccount.setReceiverAccountTransactions(receiverTransactions);
+
+	    return transaction;
+	}
+	
+	private Transaction debit(Account senderAccount, TransactionDto transactionDto) {
+		Transaction transaction = new Transaction();
+	    
+	    // Set transaction details
+	    transaction.setAmount(transactionDto.getAmount());
+	    transaction.setTransactionType(TransactionType.CREDIT);
+	    transaction.setSenderAccount(senderAccount);
+
+	    // Find and set the receiver account
+	    long receiverAccNo = transactionDto.getReceiverAccountNumber();
+	    Account receiverAccount = accountRepo.findByAccountNumber(receiverAccNo);
+	    
+	    if (receiverAccount == null) {
+	        System.out.println("Receiver account not found");
+	        return null;  // Or handle it according to your application's needs
+	    }
+	    transaction.setReceiverAccount(receiverAccount);
+
+	    // Update receiver's balance
+	    double existingBalance = receiverAccount.getBalance();
+	    double amount = transactionDto.getAmount();
+	    double newBalance = existingBalance - amount;
+	    receiverAccount.setBalance(newBalance);
+
+	    // Update sender's transactions
+	    List<Transaction> senderTransactions = senderAccount.getSenderAccountTransactions();
+	    if (senderTransactions == null) {
+	        senderTransactions = new ArrayList<>();
+	    }
+	    senderTransactions.add(transaction);
+	    senderAccount.setSenderAccountTransactions(senderTransactions);
+
+	    // Update receiver's transactions
+	    List<Transaction> receiverTransactions = receiverAccount.getReceiverAccountTransactions();
+	    if (receiverTransactions == null) {
+	        receiverTransactions = new ArrayList<>();
+	    }
+	    receiverTransactions.add(transaction);
+	    receiverAccount.setReceiverAccountTransactions(receiverTransactions);
+
+	    return transaction;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	@Override
+	public void deleteTransaction(int transactionID) {
+		transactionRepo.deleteById(transactionID);		
+	}
+
+	@Override
+	public Transaction updateTransaction(TransactionDto transactionDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,5 @@
+package com.techlabs.jwtsecurity.entity;
+
+public class User {
+
+}

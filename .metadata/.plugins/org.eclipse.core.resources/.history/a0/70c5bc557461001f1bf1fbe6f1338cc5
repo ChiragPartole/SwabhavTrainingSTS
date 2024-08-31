@@ -1,0 +1,59 @@
+package com.techlabs.cashmgmt.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import com.techlabs.cashmgmt.dto.PageResponse;
+import com.techlabs.cashmgmt.entity.Employee;
+import com.techlabs.cashmgmt.entity.Salary;
+import com.techlabs.cashmgmt.entity.SalaryTransaction;
+import com.techlabs.cashmgmt.repository.SalaryRepository;
+
+@Service
+public class SalaryServiceImpl implements SalaryService{
+
+	@Autowired
+	private SalaryRepository salaryRepo;
+	
+	@Override
+	public PageResponse<Salary> getSalaryDetails(pageNo, pageSize) {
+		Page<Salary> pageable = PageRequest.of(pageNo, pageSize)
+		return null;
+	}
+
+	Pageable pageable = PageRequest.of(pageNo, pageSize);
+	Page<Employee> employeePage = employeeRepo.findAll(pageable);
+	PageResponse<Employee> employeePageResponse = new PageResponse<Employee>();
+	employeePageResponse.setContent(employeePage.getContent());
+	employeePageResponse.setLastPage(employeePage.isLast());
+	employeePageResponse.setSize(employeePage.getSize());
+	employeePageResponse.setTotalElements(employeePage.getTotalElements());
+	employeePageResponse.setTotalPages(employeePage.getTotalPages());
+	@Override
+	public void addSalaryDetails() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateSalaryDetails() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteSalaryDetails() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public SalaryTransaction getSalaryTransactionByID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

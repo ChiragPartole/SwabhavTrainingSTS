@@ -1,0 +1,14 @@
+package com.techlabs.bankapp.service;
+
+import com.techlabs.bankapp.dto.CustomerDto;
+import com.techlabs.bankapp.dto.PageResponse;
+import com.techlabs.bankapp.entity.Customer;
+
+public interface CustomerService {
+
+	PageResponse<Customer> viewAllCustomers(int pageNoValue, int pageSizeValue);
+	Customer addCustomer(CustomerDto customerDto);
+	Customer updateCustomer(CustomerDto customerDto);
+	void deleteCustomer(int customerID);
+
+}

@@ -1,0 +1,38 @@
+package com.techlabs.bankapp.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.techlabs.bankapp.dto.UserDto;
+import com.techlabs.bankapp.service.UserService;
+
+import jakarta.servlet.http.HttpSession;
+
+@RestController
+@RequestMapping("/bankingapp")
+public class LoginController {
+
+	@Autowired
+	private UserService userService;
+	
+	@GetMapping("/login")
+	public ResponseEntity<String> login(@RequestBody UserDto userDto,HttpSession session){
+		if(!userService.login(userDto))
+			return ResponseEntity.ok("Invalid credentials");
+		
+		
+		session.setAttribute("username", userDto.getUserName());
+		return ResponseEntity.ok("login success,Welcome "+session.getAttribute("username")+" logged in as "+userDto.getRole());
+	}
+	
+	@GetMapping("/logout")
+	public ResponseEntity<String> logout(HttpSession session){
+		
+		session.invalidate();
+		return ResponseEntity.ok("logging out");
+	}
+}

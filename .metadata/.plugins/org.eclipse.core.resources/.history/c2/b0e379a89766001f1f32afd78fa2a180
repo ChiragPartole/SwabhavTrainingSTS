@@ -1,0 +1,5 @@
+package com.techlabs.jwtsecurity.security;
+
+public class JwtAuthenticationEntryPoint {
+
+}
