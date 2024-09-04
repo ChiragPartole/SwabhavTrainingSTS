@@ -1,5 +1,6 @@
 package com.techlabs.bankapp.service;
 
+import java.util.List;
 import java.util.Set;
 
 import com.techlabs.bankapp.dto.AccountDto;
@@ -15,7 +16,9 @@ public interface AccountService {
 	
 	
 	
-	Set<AccountDto> viewAccountDetails(int customerID);
+	List<Account> viewAccountDetails(int customerID);
 
 	void deleteAccount(long accountID);
+	
+
 }

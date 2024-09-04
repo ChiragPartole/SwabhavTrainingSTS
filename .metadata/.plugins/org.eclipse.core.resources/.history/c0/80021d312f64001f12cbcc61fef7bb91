@@ -1,9 +1,0 @@
-package com.techlabs.mappings.dto;
-
-public class StudentDto {
-
-	private int rollNumber;
-	private String name;
-	private int age;
-
-}

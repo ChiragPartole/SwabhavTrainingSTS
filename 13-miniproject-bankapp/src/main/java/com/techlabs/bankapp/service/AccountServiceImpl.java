@@ -1,9 +1,8 @@
 package com.techlabs.bankapp.service;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+import java.util.Random;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,15 +13,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.techlabs.bankapp.dto.AccountDto;
-import com.techlabs.bankapp.dto.CustomerDto;
 import com.techlabs.bankapp.dto.PageResponse;
 import com.techlabs.bankapp.entity.Account;
 import com.techlabs.bankapp.entity.Customer;
 import com.techlabs.bankapp.repository.AccountRepository;
 import com.techlabs.bankapp.repository.CustomerRepository;
-import com.techlabs.bankapp.repository.UserRepository;
 
-import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
@@ -35,14 +31,11 @@ public class AccountServiceImpl implements AccountService{
 	@Autowired
 	private CustomerRepository customerRepo;
 	
-	@Autowired
-	private UserRepository userRepo;
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(CustomerServiceImpl.class);
 	
 	private Account toAccountMapper(AccountDto accountDto) {
 		Account account = new Account();
-		account.setAccountNumber(accountDto.getAccountNumber());
 		account.setBalance(accountDto.getBalance());
 		
 		return account;
@@ -50,7 +43,6 @@ public class AccountServiceImpl implements AccountService{
 	
 	private AccountDto toAccountDtoMapper(Account account) {
 		AccountDto accountDto = new AccountDto();
-		accountDto.setAccountNumber(account.getAccountNumber());
 		accountDto.setBalance(account.getBalance());
 		
 		return accountDto;
@@ -83,6 +75,16 @@ public class AccountServiceImpl implements AccountService{
 	public AccountDto addAccount(AccountDto accountDto,int customerID) {
 		Account account = toAccountMapper(accountDto);
 		
+		Random random = new Random();
+        // Generate a number between 1000000000 (inclusive) and 10000000000 (exclusive)
+        long number = 1000000000L + (long)(random.nextDouble() * 9000000000L);
+        
+        if(accountRepo.existsByAccountNumber(number)) {
+        	logger.info("account number already exists");        	
+        	return null;
+        }
+        
+        account.setAccountNumber(number);
 		allocateCustomerToAccount(customerID,account);
 		return toAccountDtoMapper(account);
 	}
@@ -98,17 +100,12 @@ public class AccountServiceImpl implements AccountService{
 	}
 
 	@Override
-	public Set<AccountDto> viewAccountDetails(int customerID) {
+	public List<Account> viewAccountDetails(int customerID) {
 		Customer customer = customerRepo.findById(customerID)
 				.orElseThrow(()->new NullPointerException("no customer found"));
 		
-		Set<AccountDto> accountDtoSet = new HashSet<AccountDto>();
 		
-		customer.getAccounts().forEach((eachCustomer)->{
-			AccountDto accountDto = toAccountDtoMapper(eachCustomer);
-			
-			accountDtoSet.add(accountDto);
-		});
+		List<Account> accountDtoSet = customer.getAccounts();
 		
 		return accountDtoSet;
 	}

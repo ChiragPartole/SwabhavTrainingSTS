@@ -68,6 +68,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\springAssignments\15-cloudinary-spring-boot"/>
+			<item value="D:\springAssignments\19_batchprocessing_assignment-app"/>
 			<item value="C:\Users\chirag.partole\Downloads\spring-boot-captcha-master"/>
 			<item value="C:\Users\chirag.partole\Downloads\cloudinary-spring-boot\cloudinary-spring-boot"/>
 			<item value="D:\springAssignments\08-advancedmappings-app"/>

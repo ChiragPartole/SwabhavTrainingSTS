@@ -1,71 +1,66 @@
-2024-08-30T10:22:36.771+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 7972 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
-2024-08-30T10:22:36.779+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
-2024-08-30T10:22:36.838+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-30T10:22:36.838+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-30T10:22:37.759+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-30T10:22:37.798+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
-2024-08-30T10:22:38.675+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-30T10:22:38.705+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-30T10:22:38.706+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-30T10:22:38.775+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-30T10:22:38.775+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1932 ms
-2024-08-30T10:22:39.006+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-30T10:22:39.081+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-30T10:22:39.152+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-30T10:22:39.508+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-30T10:22:39.548+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-30T10:22:40.103+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c682dd5
-2024-08-30T10:22:40.108+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-30T10:22:41.216+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-30T10:22:41.457+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-30T10:22:41.537+05:30  WARN 7972 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-30T10:22:42.078+05:30  WARN 7972 --- [17-jwtsecurity-app] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 2ffff792-aa76-4aa3-9b2d-2e8067284b57
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2024-08-30T10:22:42.099+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2024-08-30T10:22:42.340+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-30T10:22:42.389+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-30T10:22:42.404+05:30  INFO 7972 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 6.198 seconds (process running for 7.094)
-2024-08-30T12:35:35.476+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 6824 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
-2024-08-30T12:35:35.487+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
-2024-08-30T12:35:35.573+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-30T12:35:35.573+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-30T12:35:36.434+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-30T12:35:36.512+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
-2024-08-30T12:35:37.448+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-30T12:35:37.472+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-30T12:35:37.473+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-30T12:35:37.556+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-30T12:35:37.557+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1983 ms
-2024-08-30T12:35:37.929+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-30T12:35:38.000+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-30T12:35:38.042+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-30T12:35:38.416+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-30T12:35:38.441+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-30T12:35:38.971+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bb6cc6e
-2024-08-30T12:35:38.974+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-30T12:35:40.704+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-30T12:35:40.810+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-30T12:35:41.436+05:30  WARN 6824 --- [17-jwtsecurity-app] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'secutiryConfig': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'customUserDetailService': Unsatisfied dependency expressed through field 'userRepo': Error creating bean with name 'userRepository' defined in com.techlabs.jwtsecurity.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean com.techlabs.jwtsecurity.repository.UserRepository.existByUsername(java.lang.String); Reason: Failed to create query for method public abstract boolean com.techlabs.jwtsecurity.repository.UserRepository.existByUsername(java.lang.String); No property 'existByUsername' found for type 'User'
-2024-08-30T12:35:41.436+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-30T12:35:41.442+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-30T12:35:41.462+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-30T12:35:41.465+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-08-30T12:35:41.485+05:30  INFO 6824 --- [17-jwtsecurity-app] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-09-02T10:25:29.657+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 4876 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
+2024-09-02T10:25:29.686+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
+2024-09-02T10:25:29.760+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-02T10:25:29.762+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-02T10:25:30.945+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-02T10:25:31.064+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 3 JPA repository interfaces.
+2024-09-02T10:25:32.076+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-02T10:25:32.099+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-02T10:25:32.099+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-02T10:25:32.179+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-02T10:25:32.180+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2418 ms
+2024-09-02T10:25:32.542+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-02T10:25:32.676+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-02T10:25:32.745+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-02T10:25:33.183+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-02T10:25:33.226+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-02T10:25:33.751+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@232b1a90
+2024-09-02T10:25:33.753+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-02T10:25:34.980+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-02T10:25:35.069+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:25:35.592+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2024-09-02T10:25:35.666+05:30  WARN 4876 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-02T10:25:36.486+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-02T10:25:36.564+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-02T10:25:36.578+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 7.517 seconds (process running for 8.307)
+2024-09-02T10:30:34.930+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-02T10:30:34.932+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-02T10:30:34.934+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-02T10:37:46.108+05:30  INFO 4876 --- [17-jwtsecurity-app] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-02T10:37:46.125+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:37:46.128+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-02T10:37:46.138+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-02T10:37:46.290+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 4876 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
+2024-09-02T10:37:46.291+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
+2024-09-02T10:37:46.698+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-02T10:37:46.751+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+2024-09-02T10:37:46.915+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-02T10:37:46.916+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-02T10:37:46.916+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-02T10:37:46.959+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-02T10:37:46.959+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 664 ms
+2024-09-02T10:37:47.025+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-02T10:37:47.028+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-02T10:37:47.047+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-02T10:37:47.049+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-09-02T10:37:47.080+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bf22576
+2024-09-02T10:37:47.080+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-09-02T10:37:47.170+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-02T10:37:47.192+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:37:47.203+05:30  WARN 4876 --- [17-jwtsecurity-app] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'secutiryConfig' defined in file [D:\springAssignments\17-jwtsecurity-app\target\classes\com\techlabs\jwtsecurity\config\SecutiryConfig.class]: Failed to instantiate [com.techlabs.jwtsecurity.config.SecutiryConfig$$SpringCGLIB$$0]: Constructor threw exception
+2024-09-02T10:37:47.203+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:37:47.203+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-09-02T10:37:47.244+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-09-02T10:37:47.244+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-09-02T10:37:47.247+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-08-30T12:35:41.521+05:30 ERROR 6824 --- [17-jwtsecurity-app] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2024-09-02T10:37:47.265+05:30 ERROR 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'secutiryConfig': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'customUserDetailService': Unsatisfied dependency expressed through field 'userRepo': Error creating bean with name 'userRepository' defined in com.techlabs.jwtsecurity.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean com.techlabs.jwtsecurity.repository.UserRepository.existByUsername(java.lang.String); Reason: Failed to create query for method public abstract boolean com.techlabs.jwtsecurity.repository.UserRepository.existByUsername(java.lang.String); No property 'existByUsername' found for type 'User'
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.12.jar:6.1.12]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'secutiryConfig' defined in file [D:\springAssignments\17-jwtsecurity-app\target\classes\com\techlabs\jwtsecurity\config\SecutiryConfig.class]: Failed to instantiate [com.techlabs.jwtsecurity.config.SecutiryConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.12.jar:6.1.12]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
@@ -84,337 +79,82 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailService': Unsatisfied dependency expressed through field 'userRepo': Error creating bean with name 'userRepository' defined in com.techlabs.jwtsecurity.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean com.techlabs.jwtsecurity.repository.UserRepository.existByUsername(java.lang.String); Reason: Failed to create query for method public abstract boolean com.techlabs.jwtsecurity.repository.UserRepository.existByUsername(java.lang.String); No property 'existByUsername' found for type 'User'
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.1.12.jar:6.1.12]
-	... 23 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.techlabs.jwtsecurity.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean com.techlabs.jwtsecurity.repository.UserRepository.existByUsername(java.lang.String); Reason: Failed to create query for method public abstract boolean com.techlabs.jwtsecurity.repository.UserRepository.existByUsername(java.lang.String); No property 'existByUsername' found for type 'User'
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.1.12.jar:6.1.12]
-	... 37 common frames omitted
-Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean com.techlabs.jwtsecurity.repository.UserRepository.existByUsername(java.lang.String); Reason: Failed to create query for method public abstract boolean com.techlabs.jwtsecurity.repository.UserRepository.existByUsername(java.lang.String); No property 'existByUsername' found for type 'User'
-	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:119) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:103) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:92) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:92) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:357) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:286) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.util.Lazy.get(Lazy.java:113) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:292) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
-	... 47 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.techlabs.jwtsecurity.repository.UserRepository.existByUsername(java.lang.String); No property 'existByUsername' found for type 'User'
-	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:124) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:258) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:95) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:115) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	... 59 common frames omitted
-Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'existByUsername' found for type 'User'
-	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:455) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:431) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:384) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:366) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:344) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:259) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:260) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:389) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:390) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:100) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	... 63 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.techlabs.jwtsecurity.config.SecutiryConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	HttpMethod cannot be resolved to a variable
+	HttpMethod cannot be resolved to a variable
+	HttpMethod cannot be resolved to a variable
+	HttpMethod cannot be resolved to a variable
 
-2024-08-30T12:37:12.606+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 20764 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
-2024-08-30T12:37:12.614+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
-2024-08-30T12:37:12.688+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-30T12:37:12.689+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-30T12:37:13.428+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-30T12:37:13.516+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
-2024-08-30T12:37:14.310+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-30T12:37:14.328+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-30T12:37:14.329+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-30T12:37:14.384+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-30T12:37:14.385+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1695 ms
-2024-08-30T12:37:14.671+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-30T12:37:14.762+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-30T12:37:14.808+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-30T12:37:15.257+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-30T12:37:15.305+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-30T12:37:15.917+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7eee82b8
-2024-08-30T12:37:15.920+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-30T12:37:17.177+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-30T12:37:17.242+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-30T12:37:17.715+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2024-08-30T12:37:17.742+05:30  WARN 20764 --- [17-jwtsecurity-app] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'authService': Error creating bean with name 'authServiceImpl': Unsatisfied dependency expressed through field 'roleRepo': Error creating bean with name 'roleRepository' defined in com.techlabs.jwtsecurity.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.techlabs.jwtsecurity.repository.RoleRepository.findByRollname(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional com.techlabs.jwtsecurity.repository.RoleRepository.findByRollname(java.lang.String); No property 'rollname' found for type 'Role'; Did you mean 'rolename'
-2024-08-30T12:37:17.744+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-30T12:37:17.753+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-30T12:37:17.780+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-30T12:37:17.785+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-08-30T12:37:17.805+05:30  INFO 20764 --- [17-jwtsecurity-app] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+	at com.techlabs.jwtsecurity.config.SecutiryConfig.<init>(SecutiryConfig.java:52) ~[classes/:na]
+	at com.techlabs.jwtsecurity.config.SecutiryConfig$$SpringCGLIB$$0.<init>(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 22 common frames omitted
 
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-08-30T12:37:17.844+05:30 ERROR 20764 --- [17-jwtsecurity-app] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2024-09-02T10:37:49.740+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 4876 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
+2024-09-02T10:37:49.740+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
+2024-09-02T10:37:49.961+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-02T10:37:49.991+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2024-09-02T10:37:50.125+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-02T10:37:50.126+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-02T10:37:50.127+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-02T10:37:50.147+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-02T10:37:50.147+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 405 ms
+2024-09-02T10:37:50.194+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-02T10:37:50.197+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-02T10:37:50.205+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-02T10:37:50.207+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-09-02T10:37:50.228+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@575e690
+2024-09-02T10:37:50.229+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-09-02T10:37:50.302+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-02T10:37:50.322+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:37:50.431+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2024-09-02T10:37:50.479+05:30  WARN 4876 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-02T10:37:50.669+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-02T10:37:50.678+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-02T10:37:50.683+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 0.968 seconds (process running for 742.412)
+2024-09-02T10:37:50.685+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-02T10:38:17.621+05:30  INFO 4876 --- [17-jwtsecurity-app] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-02T10:38:17.636+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:38:17.637+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-09-02T10:38:17.644+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-09-02T10:38:17.727+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 4876 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
+2024-09-02T10:38:17.727+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
+2024-09-02T10:38:17.984+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-02T10:38:18.013+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2024-09-02T10:38:18.101+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-02T10:38:18.102+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-02T10:38:18.103+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-02T10:38:18.127+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-02T10:38:18.128+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 398 ms
+2024-09-02T10:38:18.180+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-02T10:38:18.183+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-02T10:38:18.190+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-02T10:38:18.191+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-09-02T10:38:18.209+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d477f65
+2024-09-02T10:38:18.209+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-09-02T10:38:18.285+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-02T10:38:18.304+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:38:18.421+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2024-09-02T10:38:18.447+05:30  WARN 4876 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-02T10:38:18.586+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-02T10:38:18.595+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-02T10:38:18.598+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 0.906 seconds (process running for 770.328)
+2024-09-02T10:38:18.599+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-02T10:38:23.130+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-02T10:38:23.130+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-02T10:38:23.131+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-02T10:38:40.670+05:30 ERROR 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'authService': Error creating bean with name 'authServiceImpl': Unsatisfied dependency expressed through field 'roleRepo': Error creating bean with name 'roleRepository' defined in com.techlabs.jwtsecurity.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.techlabs.jwtsecurity.repository.RoleRepository.findByRollname(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional com.techlabs.jwtsecurity.repository.RoleRepository.findByRollname(java.lang.String); No property 'rollname' found for type 'Role'; Did you mean 'rolename'
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
-	at com.techlabs.jwtsecurity.Application.main(Application.java:10) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authServiceImpl': Unsatisfied dependency expressed through field 'roleRepo': Error creating bean with name 'roleRepository' defined in com.techlabs.jwtsecurity.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.techlabs.jwtsecurity.repository.RoleRepository.findByRollname(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional com.techlabs.jwtsecurity.repository.RoleRepository.findByRollname(java.lang.String); No property 'rollname' found for type 'Role'; Did you mean 'rolename'
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.1.12.jar:6.1.12]
-	... 23 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleRepository' defined in com.techlabs.jwtsecurity.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.techlabs.jwtsecurity.repository.RoleRepository.findByRollname(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional com.techlabs.jwtsecurity.repository.RoleRepository.findByRollname(java.lang.String); No property 'rollname' found for type 'Role'; Did you mean 'rolename'
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.1.12.jar:6.1.12]
-	... 37 common frames omitted
-Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.Optional com.techlabs.jwtsecurity.repository.RoleRepository.findByRollname(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional com.techlabs.jwtsecurity.repository.RoleRepository.findByRollname(java.lang.String); No property 'rollname' found for type 'Role'; Did you mean 'rolename'
-	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:119) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:103) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:92) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:92) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:357) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:286) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.util.Lazy.get(Lazy.java:113) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:292) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
-	... 47 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.techlabs.jwtsecurity.repository.RoleRepository.findByRollname(java.lang.String); No property 'rollname' found for type 'Role'; Did you mean 'rolename'
-	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:124) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:258) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:95) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:115) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	... 59 common frames omitted
-Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'rollname' found for type 'Role'; Did you mean 'rolename'
-	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:455) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:431) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:384) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:366) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:344) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:259) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:260) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:389) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:390) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:103) ~[spring-data-commons-3.3.3.jar:3.3.3]
-	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101) ~[spring-data-jpa-3.3.3.jar:3.3.3]
-	... 63 common frames omitted
-
-2024-08-30T12:38:14.463+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 12128 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
-2024-08-30T12:38:14.470+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
-2024-08-30T12:38:14.518+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-30T12:38:14.518+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-30T12:38:15.319+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-30T12:38:15.406+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
-2024-08-30T12:38:16.097+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-30T12:38:16.115+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-30T12:38:16.115+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-30T12:38:16.196+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-30T12:38:16.196+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1677 ms
-2024-08-30T12:38:16.480+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-30T12:38:16.528+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-30T12:38:16.555+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-30T12:38:16.806+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-30T12:38:16.828+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-30T12:38:17.216+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15c09e08
-2024-08-30T12:38:17.220+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-30T12:38:18.080+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-30T12:38:18.142+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-30T12:38:18.661+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2024-08-30T12:38:18.733+05:30  WARN 12128 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-30T12:38:19.387+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-30T12:38:19.450+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-30T12:38:19.459+05:30  INFO 12128 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 5.529 seconds (process running for 6.158)
-2024-08-30T12:41:28.446+05:30  INFO 12128 --- [17-jwtsecurity-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-30T12:41:28.447+05:30  INFO 12128 --- [17-jwtsecurity-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-30T12:41:28.451+05:30  INFO 12128 --- [17-jwtsecurity-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2024-08-30T12:50:24.881+05:30  WARN 12128 --- [17-jwtsecurity-app] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.techlabs.jwtsecurity.dto.JwtAuthReponse> com.techlabs.jwtsecurity.controller.LoginController.login(com.techlabs.jwtsecurity.dto.LoginDto)]
-2024-08-30T12:57:35.218+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 19472 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
-2024-08-30T12:57:35.223+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
-2024-08-30T12:57:35.275+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-30T12:57:35.275+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-30T12:57:36.074+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-30T12:57:36.154+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
-2024-08-30T12:57:37.115+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-30T12:57:37.154+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-30T12:57:37.155+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-08-30T12:57:37.287+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-30T12:57:37.288+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2013 ms
-2024-08-30T12:57:37.708+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-30T12:57:37.831+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-30T12:57:37.881+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-30T12:57:38.471+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-30T12:57:38.531+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-30T12:57:39.391+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b0a8c90
-2024-08-30T12:57:39.407+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-30T12:57:41.342+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-30T12:57:41.454+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-30T12:57:42.272+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
-2024-08-30T12:57:42.408+05:30  WARN 19472 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-30T12:57:43.685+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-30T12:57:43.767+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-30T12:57:43.788+05:30  INFO 19472 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 9.033 seconds (process running for 9.983)
-2024-08-30T12:57:46.694+05:30  INFO 19472 --- [17-jwtsecurity-app] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-30T12:57:46.694+05:30  INFO 19472 --- [17-jwtsecurity-app] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-30T12:57:46.696+05:30  INFO 19472 --- [17-jwtsecurity-app] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-08-30T12:57:47.102+05:30 ERROR 19472 --- [17-jwtsecurity-app] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.techlabs.jwtsecurity.exception.UserApiException: Username or password is incorrect] with root cause
-
-com.techlabs.jwtsecurity.exception.UserApiException: Username or password is incorrect
-	at com.techlabs.jwtsecurity.service.AuthServiceImpl.login(AuthServiceImpl.java:75) ~[classes/:na]
-	at com.techlabs.jwtsecurity.controller.LoginController.login(LoginController.java:31) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at com.techlabs.jwtsecurity.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:58) ~[classes/:na]
+java.lang.NullPointerException: Cannot invoke "com.techlabs.jwtsecurity.security.JwtTokenProvider.validateToken(String)" because "this.jwtTokenProvider" is null
+	at com.techlabs.jwtsecurity.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:38) ~[classes/:na]
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
@@ -476,3 +216,272 @@ com.techlabs.jwtsecurity.exception.UserApiException: Username or password is inc
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
+2024-09-02T10:42:02.473+05:30  INFO 4876 --- [17-jwtsecurity-app] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-02T10:42:02.487+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:42:02.488+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-09-02T10:42:02.494+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-09-02T10:42:02.614+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 4876 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
+2024-09-02T10:42:02.615+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
+2024-09-02T10:42:02.885+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-02T10:42:02.921+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2024-09-02T10:42:03.045+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-02T10:42:03.047+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-02T10:42:03.047+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-02T10:42:03.079+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-02T10:42:03.079+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 460 ms
+2024-09-02T10:42:03.130+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-02T10:42:03.134+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-02T10:42:03.147+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-02T10:42:03.148+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-09-02T10:42:03.173+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49ea3823
+2024-09-02T10:42:03.173+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-09-02T10:42:03.258+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-02T10:42:03.286+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:42:03.400+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2024-09-02T10:42:03.447+05:30  WARN 4876 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-02T10:42:03.567+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-02T10:42:03.576+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-02T10:42:03.579+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 1.003 seconds (process running for 995.309)
+2024-09-02T10:42:03.580+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-02T10:42:06.326+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-02T10:42:06.326+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-02T10:42:06.327+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-02T10:42:06.356+05:30 ERROR 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetailsService.loadUserByUsername(String)" because "this.userDetailsService" is null
+	at com.techlabs.jwtsecurity.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:45) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-09-02T10:42:37.547+05:30  INFO 4876 --- [17-jwtsecurity-app] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-02T10:42:37.563+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:42:37.564+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-09-02T10:42:37.570+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-09-02T10:42:37.680+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 4876 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
+2024-09-02T10:42:37.680+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
+2024-09-02T10:42:37.877+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-02T10:42:37.912+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2024-09-02T10:42:38.015+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-02T10:42:38.017+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-02T10:42:38.017+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-02T10:42:38.036+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-02T10:42:38.036+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 353 ms
+2024-09-02T10:42:38.072+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-02T10:42:38.074+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-02T10:42:38.083+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-02T10:42:38.083+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-09-02T10:42:38.103+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b58296b
+2024-09-02T10:42:38.104+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-09-02T10:42:38.177+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-02T10:42:38.199+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:42:38.325+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2024-09-02T10:42:38.368+05:30  WARN 4876 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-02T10:42:38.562+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-02T10:42:38.574+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-02T10:42:38.577+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 0.922 seconds (process running for 1030.306)
+2024-09-02T10:42:38.578+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-02T10:42:40.544+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-02T10:42:40.544+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-02T10:42:40.545+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-02T10:53:26.578+05:30  INFO 4876 --- [17-jwtsecurity-app] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-02T10:53:26.591+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:53:26.591+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-09-02T10:53:26.598+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-09-02T10:53:26.690+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 4876 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
+2024-09-02T10:53:26.690+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
+2024-09-02T10:53:26.861+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-02T10:53:26.894+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2024-09-02T10:53:27.011+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-02T10:53:27.012+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-02T10:53:27.012+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-02T10:53:27.035+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-02T10:53:27.035+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 343 ms
+2024-09-02T10:53:27.070+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-02T10:53:27.072+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-02T10:53:27.081+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-02T10:53:27.082+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-09-02T10:53:27.102+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@478610b2
+2024-09-02T10:53:27.102+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-09-02T10:53:27.188+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-02T10:53:27.207+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:53:27.341+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2024-09-02T10:53:27.392+05:30  WARN 4876 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-02T10:53:27.544+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-02T10:53:27.556+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-02T10:53:27.559+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 0.895 seconds (process running for 1679.289)
+2024-09-02T10:53:27.561+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-02T10:53:37.112+05:30  INFO 4876 --- [17-jwtsecurity-app] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-02T10:53:37.125+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:53:37.125+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-09-02T10:53:37.130+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-09-02T10:53:37.212+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 4876 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
+2024-09-02T10:53:37.212+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
+2024-09-02T10:53:37.379+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-02T10:53:37.407+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2024-09-02T10:53:37.498+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-02T10:53:37.498+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-02T10:53:37.499+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-02T10:53:37.521+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-02T10:53:37.521+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 307 ms
+2024-09-02T10:53:37.557+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-02T10:53:37.559+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-02T10:53:37.566+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-02T10:53:37.567+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-09-02T10:53:37.582+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d4dc81a
+2024-09-02T10:53:37.583+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-09-02T10:53:37.646+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-02T10:53:37.665+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:53:37.799+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2024-09-02T10:53:37.829+05:30  WARN 4876 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-02T10:53:37.964+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-02T10:53:37.974+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-02T10:53:37.976+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 0.786 seconds (process running for 1689.706)
+2024-09-02T10:53:37.979+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-02T10:53:49.378+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-02T10:53:49.378+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-02T10:53:49.380+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-02T10:58:32.506+05:30  INFO 4876 --- [17-jwtsecurity-app] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-02T10:58:32.520+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:58:32.521+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-09-02T10:58:32.526+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2024-09-02T10:58:32.622+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 4876 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
+2024-09-02T10:58:32.623+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
+2024-09-02T10:58:32.770+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-02T10:58:32.800+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2024-09-02T10:58:32.894+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-02T10:58:32.895+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-02T10:58:32.895+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-02T10:58:32.918+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-02T10:58:32.919+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 295 ms
+2024-09-02T10:58:32.959+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-02T10:58:32.960+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-02T10:58:32.966+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-02T10:58:32.967+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-09-02T10:58:32.986+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@697f60a9
+2024-09-02T10:58:32.986+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-09-02T10:58:33.067+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-02T10:58:33.086+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:58:33.175+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2024-09-02T10:58:33.216+05:30  WARN 4876 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-02T10:58:33.339+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-02T10:58:33.346+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-02T10:58:33.348+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 0.747 seconds (process running for 1985.078)
+2024-09-02T10:58:33.349+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-02T10:58:35.845+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-02T10:58:35.845+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-02T10:58:35.846+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-02T10:59:16.591+05:30  INFO 4876 --- [17-jwtsecurity-app] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-02T10:59:16.605+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:59:16.605+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-09-02T10:59:16.613+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-09-02T10:59:16.714+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 4876 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
+2024-09-02T10:59:16.716+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
+2024-09-02T10:59:16.869+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-02T10:59:16.897+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2024-09-02T10:59:16.976+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-02T10:59:16.977+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-02T10:59:16.977+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-02T10:59:16.998+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-02T10:59:16.999+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 281 ms
+2024-09-02T10:59:17.035+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-02T10:59:17.037+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-02T10:59:17.046+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-02T10:59:17.047+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-09-02T10:59:17.065+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e2f0725
+2024-09-02T10:59:17.065+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-09-02T10:59:17.128+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-02T10:59:17.146+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:59:17.249+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2024-09-02T10:59:17.285+05:30  WARN 4876 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-02T10:59:17.407+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-02T10:59:17.416+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-02T10:59:17.419+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 0.728 seconds (process running for 2029.149)
+2024-09-02T10:59:17.421+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-02T10:59:58.479+05:30  INFO 4876 --- [17-jwtsecurity-app] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-02T10:59:58.492+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-38] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:59:58.493+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2024-09-02T10:59:58.499+05:30  INFO 4876 --- [17-jwtsecurity-app] [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2024-09-02T10:59:58.607+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Starting Application using Java 21.0.3 with PID 4876 (D:\springAssignments\17-jwtsecurity-app\target\classes started by Chirag.Partole in D:\springAssignments\17-jwtsecurity-app)
+2024-09-02T10:59:58.607+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : No active profile set, falling back to 1 default profile: "default"
+2024-09-02T10:59:58.762+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-02T10:59:58.793+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+2024-09-02T10:59:58.874+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-02T10:59:58.875+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-02T10:59:58.875+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-02T10:59:58.903+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-02T10:59:58.904+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 295 ms
+2024-09-02T10:59:58.956+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-02T10:59:58.957+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-02T10:59:58.966+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-02T10:59:58.967+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2024-09-02T10:59:58.985+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2940d3f8
+2024-09-02T10:59:58.985+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2024-09-02T10:59:59.049+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-02T10:59:59.073+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-02T10:59:59.189+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2024-09-02T10:59:59.217+05:30  WARN 4876 --- [17-jwtsecurity-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-02T10:59:59.340+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-02T10:59:59.348+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-02T10:59:59.351+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] com.techlabs.jwtsecurity.Application     : Started Application in 0.767 seconds (process running for 2071.081)
+2024-09-02T10:59:59.352+05:30  INFO 4876 --- [17-jwtsecurity-app] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-02T11:00:03.345+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-02T11:00:03.345+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-02T11:00:03.346+05:30  INFO 4876 --- [17-jwtsecurity-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

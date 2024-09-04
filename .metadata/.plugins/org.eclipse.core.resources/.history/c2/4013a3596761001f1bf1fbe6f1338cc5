@@ -1,8 +1,0 @@
-package com.techlabs.cashmgmt.service;
-
-import com.techlabs.cashmgmt.entity.SalaryAccount;
-
-public interface SalaryAccountService {
-
-	SalaryAccount getSalaryAccountByEmployeeID(int employeeID);
-}

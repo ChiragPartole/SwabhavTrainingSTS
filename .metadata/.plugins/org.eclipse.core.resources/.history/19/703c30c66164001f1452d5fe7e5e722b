@@ -1,8 +1,0 @@
-package com.techlabs.cashmgmt.service;
-
-import com.techlabs.cashmgmt.dto.PageResponse;
-
-public interface UserService {
-
-	PageResponse<UserDto> getAllUsers(int pageNo,int pageSize);
-}

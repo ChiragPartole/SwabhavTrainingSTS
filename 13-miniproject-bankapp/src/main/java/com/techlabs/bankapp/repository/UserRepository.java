@@ -1,11 +1,13 @@
 package com.techlabs.bankapp.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
 
-import com.techlabs.bankapp.entity.Roles;
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.techlabs.bankapp.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Integer>{
 	
-	User findByUserNameAndUserPasswordAndRole(String username,String password, Roles rolename);
+	Optional<User> findByUserName(String username);
+	
+	boolean existsByUserName(String username);
 }

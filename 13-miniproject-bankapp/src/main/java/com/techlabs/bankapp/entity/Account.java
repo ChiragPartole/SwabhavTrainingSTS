@@ -15,6 +15,8 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,7 +35,10 @@ public class Account {
 	@Id
 	@Column(name="accountNumber")
 	private long accountNumber;
+	
 	@Column(name="balance")
+    @Min(value = 0, message = "Balance cannot be negative")
+	@NotNull(message = "Balance cannot be null")
 	private double balance;
 	
 	@ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})

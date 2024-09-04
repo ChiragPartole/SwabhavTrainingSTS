@@ -1,8 +1,0 @@
-package com.techlabs.mappings.service;
-
-import com.techlabs.mappings.entity.Instructor;
-
-public interface InstructorService {
-
-	Instructor addInstructor(Instructor instructor);
-}

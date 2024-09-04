@@ -1,9 +1,0 @@
-package com.techlabs.mappings.service;
-
-import com.techlabs.mappings.dto.CourseDto;
-import com.techlabs.mappings.entity.Course;
-
-public interface CourseService {
-
-	Course addCourse(CourseDto courseDto);
-}
